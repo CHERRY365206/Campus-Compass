@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Compass | Amrita Vishwa Vidyapeetham Amaravati</title>
+    <meta name="description" content="The ultimate guide for freshers joining Amrita Vishwa Vidyapeetham, Amaravati. Academic life, campus tips, clubs, and more.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <!-- AOS Library CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🧭</span> Campus Compass
+            </div>
+            <ul class="nav-links">
+                <li><a href="#campuses">Campuses</a></li>
+                <li><a href="#academics">Academics</a></li>
+                <li><a href="#campus-life">Campus Life</a></li>
+                <li><a href="#clubs">Clubs</a></li>
+                <li><a href="#survival-kit">Survival Kit</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <div class="nav-actions">
+                <!-- Hamburger menu for mobile -->
+                <button class="menu-toggle" aria-label="Open Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Campus Showcase (Split Layouts) -->
+    <div id="campuses" class="campuses-container">
+        
+        <!-- Amaravati Campus (Left Image, Right Text) -->
+        <section class="campus-showcase">
+            <div class="campus-image" data-aos="fade-right">
+                <img src="square.png" alt="Amrita Amaravati Campus">
+            </div>
+            <div class="campus-info" data-aos="fade-left">
+                <h1 class="gradient-text">Amrita Amaravati</h1>
+                <h3>The Hub of Innovation</h3>
+                <p>Welcome to our brand new, state-of-the-art home! While the capital region around us is still growing, our campus is already packed with high-tech labs and stunning glass architecture. We've all been in your shoes—confused, excited, and a little lost. This is your unofficial survival guide, crafted by seniors to help you navigate your next four years.</p>
+                <a href="#campus-life" class="btn primary-btn mt-4">Explore Campus Life</a>
+            </div>
+        </section>
+
+        <div class="text-center" style="text-align: center; margin: 2rem 0 4rem;">
+            <button id="see-all-campuses-btn" class="btn secondary-btn" style="font-size: 1.1rem; padding: 1rem 2rem; border-radius: 30px; display: inline-flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                See All Campuses <span>👇</span>
+            </button>
+        </div>
+
+        <div id="other-campuses" style="display: none;">
+
+        <!-- Coimbatore Campus (Right Image, Left Text) -->
+        <section class="campus-showcase reverse">
+            <div class="campus-image" data-aos="fade-left">
+                <img src="coimbatore square.png" alt="Amrita Coimbatore Campus">
+            </div>
+            <div class="campus-info" data-aos="fade-right">
+                <h2>Amrita Coimbatore</h2>
+                <h3>The Grand Main Campus</h3>
+                <p>Set against the majestic backdrop of the Western Ghats, the sprawling Coimbatore campus is a sight to behold. Known for its massive academic blocks and scenic, lush green environment, it stands as the monumental flagship of Amrita Vishwa Vidyapeetham.</p>
+            </div>
+        </section>
+
+        <!-- Amritapuri Campus (Left Image, Right Text) -->
+        <section class="campus-showcase bg-alt">
+            <div class="campus-image" data-aos="fade-right">
+                <img src="amritapuri.png" alt="Amrita Amritapuri Campus">
+            </div>
+            <div class="campus-info" data-aos="fade-left">
+                <h2>Amrita Amritapuri</h2>
+                <h3>The Coastal Ashram</h3>
+                <p>A serene haven surrounded by Kerala's beautiful backwaters. The Amritapuri campus blends traditional Indian roots with modern engineering education, offering a uniquely peaceful atmosphere accompanied by the coastal breeze.</p>
+            </div>
+        </section>
+
+        <!-- Bengaluru Campus (Right Image, Left Text) -->
+        <section class="campus-showcase reverse bg-alt">
+            <div class="campus-image" data-aos="fade-left">
+                <img src="banglore_square.png" alt="Amrita Bengaluru Campus">
+            </div>
+            <div class="campus-info" data-aos="fade-right">
+                <h2>Amrita Bengaluru</h2>
+                <h3>The Vibrant Tech Hub</h3>
+                <p>Situated in the heart of India's Silicon Valley, the Bengaluru campus thrives on metropolitan energy. With sleek architecture and glowing nightscapes, it directly connects students to the fast-paced world of tech innovation.</p>
+            </div>
+        </section>
+        </div>
+
+    </div>
+
+    <!-- Quick Tips Ticker -->
+    <div class="ticker-wrap" data-aos="fade-up">
+        <div class="ticker">
+            <div class="ticker-item">💡 Tip: Always carry your ID card!</div>
+            <div class="ticker-item">⚠️ Rule: 75% attendance is strictly enforced for writing end-semester exams.</div>
+            <div class="ticker-item">🚀 Hack: Join at least one club in your first semester to boost your resume!</div>
+            <div class="ticker-item">📚 Info: Continuous Internal Assessments (CIA) matter as much as End Semester Exams (ESE).</div>
+            <div class="ticker-item">💡 Tip: Bring an umbrella - Amaravati weather can be unpredictable!</div>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <!-- Academic Life Section -->
+        <section id="academics" class="section">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Academic Life</h2>
+                <p>Everything you need to know about B.Tech at Amrita Amaravati.</p>
+            </div>
+            
+            <div class="grid-layout">
+                <!-- Branches -->
+                <div class="card glass-card span-2" data-aos="fade-up" data-aos-delay="100">
+                    <h3>B.Tech Branches Available</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-top: 1.5rem; margin-bottom: 1.5rem;">
+                        <div style="background: rgba(109, 40, 217, 0.05); padding: 1rem; border-radius: 8px; border-left: 4px solid var(--primary); display: flex; align-items: center; gap: 0.75rem;">
+                            <span style="font-size: 1.5rem;">💻</span>
+                            <span style="font-weight: 600; color: var(--text-primary);">Computer Science & Engineering</span>
+                        </div>
+                        <div style="background: rgba(109, 40, 217, 0.05); padding: 1rem; border-radius: 8px; border-left: 4px solid var(--primary-light); display: flex; align-items: center; gap: 0.75rem;">
+                            <span style="font-size: 1.5rem;">🤖</span>
+                            <span style="font-weight: 600; color: var(--text-primary);">CSE (Artificial Intelligence)</span>
+                        </div>
+                        <div style="background: rgba(6, 182, 212, 0.05); padding: 1rem; border-radius: 8px; border-left: 4px solid var(--accent); display: flex; align-items: center; gap: 0.75rem;">
+                            <span style="font-size: 1.5rem;">📊</span>
+                            <span style="font-weight: 600; color: var(--text-primary);">AI & Data Science</span>
+                        </div>
+                        <div style="background: rgba(236, 72, 153, 0.05); padding: 1rem; border-radius: 8px; border-left: 4px solid var(--secondary); display: flex; align-items: center; gap: 0.75rem;">
+                            <span style="font-size: 1.5rem;">📡</span>
+                            <span style="font-weight: 600; color: var(--text-primary);">Computer & Communication</span>
+                        </div>
+                    </div>
+                    <p>Expect a curriculum that blends strong fundamentals with cutting-edge tech. Labs are intensive here, so make sure you take your practicals seriously—they carry significant weightage!</p>
+                </div>
+
+                <!-- Exams -->
+                <div class="card glass-card border-accent" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Exam Pattern</h3>
+                    <ul class="styled-list">
+                        <li><strong>Continuous Assessments (50%)</strong>: Trust us, don't take these lightly! Class tests, assignments, and projects make up half your grade.</li>
+                        <li><strong>Mid Semester Exam (20%)</strong>: The first major milestone of the semester.</li>
+                        <li><strong>End Semester Exam (30%)</strong>: The final hurdle.</li>
+                        <li><strong>Pro Tip</strong>: Consistent effort in your CIAs saves you massive stress during the final exam week.</li>
+                    </ul>
+                </div>
+
+                <!-- Rules -->
+                <div class="card glass-card" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Attendance Rules 🚨</h3>
+                    <p>We can't stress this enough: attendance is strictly enforced. You <strong>MUST</strong> keep it above <strong>75%-80%</strong>. If you drop below, you'll get an <strong>'FA' (Failed due to Attendance)</strong> and won't be allowed to write the final exam. Save your bunks for when you actually need them!</p>
+                </div>
+
+                <!-- CGPA Tips -->
+                <div class="card glass-card span-2 bg-gradient" data-aos="fade-up" data-aos-delay="400">
+                    <h3>Tips to maintain a good CGPA from Day 1</h3>
+                    <div class="tips-grid">
+                        <div class="tip-box">
+                            <span class="icon">📝</span>
+                            <h4>Don't ignore CIAs</h4>
+                            <p>Scoring high in CIAs reduces the burden on your ESEs drastically.</p>
+                        </div>
+                        <div class="tip-box">
+                            <span class="icon">🤝</span>
+                            <h4>Form Study Groups</h4>
+                            <p>Peer learning is the best way to tackle tough CSE concepts.</p>
+                        </div>
+                        <div class="tip-box">
+                            <span class="icon">💻</span>
+                            <h4>Code Daily</h4>
+                            <p>Don't wait for lab days to write code. Consistency is key.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Campus & Hostel Life Section -->
+        <section id="campus-life" class="section bg-alt">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Campus & Hostel Life</h2>
+                <p>Surviving and thriving in your new home away from home.</p>
+            </div>
+
+            <div class="grid-layout">
+                <div class="card glass-card span-3" data-aos="fade-up">
+                    <h3>First Month at College Timeline</h3>
+                    <div class="timeline">
+                        <div class="timeline-item" data-aos="fade-left" data-aos-delay="100">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Week 1: Orientation & Onboarding</h4>
+                                <p>Familiarize yourself with the campus layout, get your ID card set up, and attend the welcoming sessions. It's overwhelming but fun!</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-aos="fade-left" data-aos-delay="200">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Week 2: Classes Begin</h4>
+                                <p>Syllabus drops. You'll meet your professors and get access to AUMS (Amrita University Management System).</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-aos="fade-left" data-aos-delay="300">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Week 3: Club Inductions</h4>
+                                <p>The most exciting week! Tech and cultural clubs start their recruitment drives. Keep an eye out for posters.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-aos="fade-left" data-aos-delay="400">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Week 4: First Periodicals Approach</h4>
+                                <p>Reality check. The first set of CIA exams will be announced. Time to start visiting the library.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Typical Daily Routine</h3>
+                    <ul class="routine-list">
+                        <li><strong>07:30 AM:</strong> Breakfast at the Mess</li>
+                        <li><strong>08:50 AM:</strong> First Class starts</li>
+                        <li><strong>12:25 PM:</strong> Lunch Break</li>
+                        <li><strong>01:15 PM:</strong> Afternoon Labs</li>
+                        <li><strong>04:45 PM:</strong> Classes end </li>
+                        <li><strong>07:30 PM:</strong> Dinner</li>
+                    </ul>
+                </div>
+
+                <div class="card glass-card span-2" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Hostel & Mess Highlights</h3>
+                    <p>The hostels are strict, but you'll make your best memories here. Everything is managed through the central <strong>Campus Management System (CMS)</strong>.</p>
+                    <div class="feature-tags mt-2">
+                        <span>Pure Veg Mess</span>
+                        <span>Wi-Fi Enabled</span>
+                        <span>CMS Outpasses</span>
+                        <span>Night Canteen</span>
+                        <span>Strict In-times</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Clubs Section -->
+        <section id="clubs" class="section">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Clubs & Extracurriculars</h2>
+                <p>Where passion meets opportunity. Don't just be an engineer, be a creator.</p>
+            </div>
+
+            <!-- Application Process -->
+            <div class="card glass-card border-accent" data-aos="zoom-in" style="margin-bottom: 2rem;">
+                <h3>🎯 How to Apply for Clubs</h3>
+                <p>Clubs are where you'll find your people! At the start of the year, they hold interviews for freshers. Don't stress too much about knowing everything—just show up with passion and a willingness to learn, and you'll do great!</p>
+            </div>
+
+            <div class="grid-layout mt-4">
+                <!-- Chakravyuha -->
+                <div class="card glass-card border-accent" data-aos="fade-up" data-aos-delay="50">
+                    <h3 style="color: var(--primary);">Chakravyuha</h3>
+                    <p>The heart of innovation at Amrita Amaravati. Top coders and hardware enthusiasts gather to build real-world projects, host hackathons, and shape the tech culture.</p>
+                </div>
+
+                <!-- ReLU -->
+                <div class="card glass-card border-accent" data-aos="fade-up" data-aos-delay="100">
+                    <h3 style="color: var(--primary);">ReLU</h3>
+                    <p>If you want to master <strong>DSA or AI/ML</strong>, this is the place to be. They run awesome bootcamps and show you how AI is actually used in the real world.</p>
+                </div>
+
+                <!-- Prachurya -->
+                <div class="card glass-card border-accent" data-aos="fade-up" data-aos-delay="200">
+                    <h3 style="color: var(--accent);">Prachurya</h3>
+                    <p>Dedicated to guiding students to <strong>win hackathons</strong> right from the basics. Learn how to ideate, prototype, and pitch winning solutions.</p>
+                </div>
+
+                <!-- Robotics Club -->
+                <div class="card glass-card border-accent" data-aos="fade-up" data-aos-delay="250">
+                    <h3 style="color: var(--primary);">Robotics Club</h3>
+                    <p>Creates awareness about robotics. Get hands-on experience and play with both <strong>robotic simulators</strong> and <strong>offline robotic tools</strong>.</p>
+                </div>
+
+                <!-- Saptaswara -->
+                <div class="card glass-card border-green" data-aos="fade-up" data-aos-delay="300">
+                    <h3 style="color: var(--secondary);">Saptaswara</h3>
+                    <p>Encourages students' musical talent. Known for conducting lively <strong>small musical concerts</strong> during the weekends to unwind and entertain.</p>
+                </div>
+
+                <!-- Nritya Sparsh -->
+                <div class="card glass-card border-green" data-aos="fade-up" data-aos-delay="400">
+                    <h3 style="color: var(--secondary);">Nritya Sparsh</h3>
+                    <p>The dedicated dance club that encourages and supports students with a passion for <strong>dance</strong>. Showcase your talent in vibrant choreographies!</p>
+                </div>
+
+                <!-- Club Finder Quiz -->
+                <div class="card glass-card span-3 bg-interactive" id="quiz-container" data-aos="fade-up" data-aos-delay="500">
+                    <h3>Find Your Perfect Club</h3>
+                    <p>Not sure where you fit in? Take our quick quiz!</p>
+                    
+                    <div class="quiz-box mt-3">
+                        <p id="quiz-question" class="quiz-question">What do you enjoy doing most in your free time?</p>
+                        <div class="quiz-options" id="quiz-options">
+                            <button class="quiz-btn" onclick="answerQuiz('tech')">Building apps or solving puzzles</button>
+                            <button class="quiz-btn" onclick="answerQuiz('culture')">Performing, singing, or dancing</button>
+                            <button class="quiz-btn" onclick="answerQuiz('sports')">Playing outdoor games and sweating it out</button>
+                            <button class="quiz-btn" onclick="answerQuiz('manage')">Organizing events and managing people</button>
+                        </div>
+                        <div id="quiz-result" class="quiz-result hidden">
+                            <h4 id="result-title"></h4>
+                            <p id="result-desc"></p>
+                            <button class="btn secondary-btn mt-2" onclick="resetQuiz()">Retake Quiz</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Survival Kit Section -->
+        <section id="survival-kit" class="section bg-alt">
+            <div class="section-header" data-aos="fade-up">
+                <h2>The Fresher's Survival Kit</h2>
+                <p>Mistakes to avoid and hacks to survive your first year.</p>
+            </div>
+
+            <div class="grid-layout" style="grid-template-columns: repeat(2, 1fr);">
+                <div class="card glass-card border-green" data-aos="fade-up" data-aos-delay="100">
+                    <h3>✅ The Do's</h3>
+                    <ul class="styled-list">
+                        <li>Make the library your second home (plus, the AC is great!).</li>
+                        <li>Build a good rapport with your professors—they're incredibly helpful if you show genuine interest.</li>
+                        <li>Join at least one tech and one cultural club to keep things balanced.</li>
+                        <li>Back up your laptop files to the cloud weekly. Trust us on this one.</li>
+                    </ul>
+                </div>
+
+                <div class="card glass-card border-red" data-aos="fade-up" data-aos-delay="200">
+                    <h3>❌ The Don'ts</h3>
+                    <ul class="styled-list">
+                        <li>Don't even try to proxy for attendance; it rarely works and isn't worth the risk.</li>
+                        <li>Try not to leave assignments until 11:59 PM.</li>
+                        <li>Don't get into bad terms with hostel wardens. Be polite.</li>
+                        <li>And seriously, avoid living entirely on instant noodles—go eat at the mess!</li>
+                    </ul>
+                </div>
+
+                <div class="card glass-card span-2" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Mental Health & Time Management</h3>
+                    <p>College can be overwhelming. Here's how to keep your sanity:</p>
+                    <div class="tags-container mt-2">
+                        <span class="badge-tag">Use Notion/Google Calendar for deadlines</span>
+                        <span class="badge-tag">Take walks in the evening</span>
+                        <span class="badge-tag">Call home twice a week</span>
+                        <span class="badge-tag">Campus Counselor is free, use them!</span>
+                        <span class="badge-tag">Sleep > Late night gaming</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources" class="section">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Must-Have Tools & Resources</h2>
+                <p>Equip yourself with the best tools for engineering.</p>
+            </div>
+
+            <div class="resources-grid" data-aos="fade-up">
+                <a href="https://nptel.ac.in" target="_blank" class="resource-card">
+                    <span class="icon">📺</span>
+                    <h4>NPTEL</h4>
+                    <p>Govt. lectures. Hard to watch, but covers everything.</p>
+                </a>
+                <a href="https://leetcode.com" target="_blank" class="resource-card">
+                    <span class="icon">💻</span>
+                    <h4>LeetCode</h4>
+                    <p>Start practicing here by Semester 3 for placements.</p>
+                </a>
+                <a href="https://geeksforgeeks.org" target="_blank" class="resource-card">
+                    <span class="icon">🤓</span>
+                    <h4>GeeksforGeeks</h4>
+                    <p>Your best friend for data structures and algorithms.</p>
+                </a>
+                <div class="resource-card">
+                    <span class="icon">🏛️</span>
+                    <h4>AUMS Portal</h4>
+                    <p>The official university portal for attendance and grades.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="section bg-alt">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="accordion" data-aos="fade-up">
+                <div class="accordion-item">
+                    <button class="accordion-btn">Is a laptop mandatory for CSE? <span class="arrow">▼</span></button>
+                    <div class="accordion-content">
+                        <p>Yes, absolutely. A laptop with at least an i5 processor (or equivalent) and 16GB RAM is highly recommended for running development environments and Docker smoothly.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-btn">Can we go out of campus during the weekend? <span class="arrow">▼</span></button>
+                    <div class="accordion-content">
+                        <p>Yes, you must apply for a gate pass through the <strong>CMS portal</strong> at least 24 hours in advance. It requires approval from your Class Advisor (working days) or Resident Warden (weekends/holidays) and is subject to a monthly quota.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-btn">What is the dress code? <span class="arrow">▼</span></button>
+                    <div class="accordion-content">
+                        <p>Uniforms are mandatory on all working days (shirts must be tucked in; sleeves cannot be rolled up). On designated casual days, attire must be modest. Jeans, short tops, sleeveless dresses, and tight clothing are strictly prohibited on campus.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Campus Compass</h3>
+                <p>Built with ❤️ by your Seniors</p>
+            </div>
+            <div class="footer-links">
+                <a href="guide.html" target="_blank" class="btn outline-btn download-btn">📄 Download 1-Page PDF Guide</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Campus Compass. Designed for Amrita Vishwa Vidyapeetham, Amaravati Freshers.</p>
+        </div>
+    </footer>
+
+    <!-- AOS JS & Custom Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
